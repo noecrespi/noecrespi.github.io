@@ -13,11 +13,141 @@
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css">
 	</head>
+
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+
+				<!-- título -->
+				<section>
+					<img src="reveal.js/img/logo.png" alt="">
+					<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+						<h2>CYCLING </h2>
+						<p class="black">FRIENDLY</p>
+						<div class="r-hstack justify-center">
+							<div data-id="box1" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+							<div data-id="box2" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+							<div data-id="box3" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						</div>
+					</section>
+				</section>
+
+
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+						<div data-id="box1" data-auto-animate-delay="0" style="background: rgb(35, 199, 147); width: 150px; height: 100px; margin: 10px;"></div>
+						<div data-id="box2" data-auto-animate-delay="0.1" style="background: rgb(221, 155, 84); width: 150px; height: 100px; margin: 10px;"></div>
+						<div data-id="box3" data-auto-animate-delay="0.2" style="background: rgb(32, 131, 151); width: 150px; height: 100px; margin: 10px;"></div>
+					</div>
+					<h2 style="margin-top: 20px;">CYCLING FRIENDLY</h2>
+				</section>
+
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-stack">
+						<div data-id="box1" style="background: rgb(35, 199, 147); width: 300px; height: 300px; border-radius: 200px;"></div>
+						<div data-id="box2" style="background: rgb(221, 155, 84); width: 200px; height: 200px; border-radius: 200px;"></div>
+						<div data-id="box3" style="background: rgb(32, 131, 151); width: 100px; height: 100px; border-radius: 200px;"></div>
+					</div>
+					<h2 style="margin-top: 20px;">CYCLING FRIENDLY</h2>
+				</section>
+
+				
+				<!-- Docker -->
+				<section>
+					<section>
+						<img src="reveal.js/img/docker.png" 
+							class="dockerImg"
+							style="height: 350px; width: auto;">
+						<p class="p">
+							plataforma abierta para desarrollar, enviar y ejecutar aplicaciones
+						</p>
+					</section>
+
+					<section>
+						<h2>Arrancar docker</h2>
+						<pre>
+							<code class="language-html">
+	docker compose up -d
+							</code>
+						</pre>
+						<img class="dockerImg"
+							src="reveal.js/img/compose.jpeg" alt="">
+					</section>
+				
+					<section>
+						<h2>Meternos en la terminal de docker</h2>
+						<pre>
+							<code class="language-html">
+	luego docker exec -it  cycling-friendly.api
+							</code>
+						</pre>
+					</section>
+				</section>
+
+				<!--  -->
+				<section>
+					<section>
+						<img src="reveal.js/img/docker.png" 
+							class="dockerImg"
+							style="height: 350px; width: auto;">
+						<p class="p">
+							plataforma abierta para desarrollar, enviar y ejecutar aplicaciones
+						</p>
+					</section>
+
+					<section>
+						<h2>Archivo</h2> 
+						<h2>.env</h2>
+						<img src="" alt="">
+					</section>
+
+					<section>
+						<h2>Arrancar docker</h2>
+						<pre>
+							<code class="language-html">
+	docker compose up -d
+							</code>
+						</pre>
+						<img src="" alt="">
+					</section>
+				
+					<section>
+						<h2>Meternos en la terminal de docker</h2>
+						<pre>
+							<code class="language-html">
+	luego docker exec -it  cycling-friendly.api
+							</code>
+						</pre>
+					</section>
+
+					<section>
+						<h2>Montar la base de datos</h2>
+						<pre>
+							<code class="language-html">
+	php artisan migrate
+							</code>
+						</pre>
+					</section>
+
+					<section>
+						<h2>Montar la base de datos</h2>
+						<pre>
+							<code class="language-html">
+	php artisan database:seed
+							</code>
+						</pre>
+					</section>
+				</section>
+
+
+
+				
+				<section>
+					<h2>Slides</h2>
+					<p>
+						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="https://slides.com" target="_blank">https://slides.com</a>.
+					</p>
+				</section>
 			</div>
 		</div>
 
