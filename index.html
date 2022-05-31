@@ -31,8 +31,6 @@
 						</div>
 					</section>
 				</section>
-
-
 				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
 					<div class="r-hstack justify-center">
 						<div data-id="box1" data-auto-animate-delay="0" style="background: rgb(35, 199, 147); width: 150px; height: 100px; margin: 10px;"></div>
@@ -41,7 +39,6 @@
 					</div>
 					<h2 style="margin-top: 20px;">CYCLING FRIENDLY</h2>
 				</section>
-
 				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
 					<div class="r-stack">
 						<div data-id="box1" style="background: rgb(35, 199, 147); width: 300px; height: 300px; border-radius: 200px;"></div>
@@ -51,102 +48,111 @@
 					<h2 style="margin-top: 20px;">CYCLING FRIENDLY</h2>
 				</section>
 
-				
-				<!-- Docker -->
+				<!-- .env -->
 				<section>
-					<section>
-						<img src="reveal.js/img/docker.png" 
-							class="dockerImg"
-							style="height: 350px; width: auto;">
-						<p class="p">
-							plataforma abierta para desarrollar, enviar y ejecutar aplicaciones
-						</p>
-					</section>
+						<section>
+							<img src="reveal.js/img/env.png" 
+								class="dockerImg"
+								style="height: 350px; width: auto;">
+								<h2>Archivo</h2> 
+								<h2>.env</h2>
+						</section>
 
-					<section>
-						<h2>Arrancar docker</h2>
-						<pre>
-							<code class="language-html">
-	docker compose up -d
-							</code>
-						</pre>
-						<img class="dockerImg"
-							src="reveal.js/img/compose.jpeg" alt="">
-					</section>
-				
-					<section>
-						<h2>Meternos en la terminal de docker</h2>
-						<pre>
-							<code class="language-html">
-	luego docker exec -it  cycling-friendly.api
-							</code>
-						</pre>
-					</section>
+						<section>
+							<h2>tenemos diferentes entornos</h2>
+							<img src="reveal.js/img/Sin título-2.png" 
+								class="dockerImg"
+								style="height: 500px; width: auto;">
+						</section>
 				</section>
-
-				<!--  -->
+					
+				<!-- Develop -->
 				<section>
+
 					<section>
-						<img src="reveal.js/img/docker.png" 
-							class="dockerImg"
-							style="height: 350px; width: auto;">
-						<p class="p">
-							plataforma abierta para desarrollar, enviar y ejecutar aplicaciones
+						<h2>Develop</h2>
+						<p>Entorno de pruebas donde se pone a prueba el codigo, se usa docker para simular el mismo entorno que produccion
 						</p>
 					</section>
 
+					<!-- Docker -->
 					<section>
-						<h2>Archivo</h2> 
-						<h2>.env</h2>
-						<img src="" alt="">
+							<img src="reveal.js/img/docker.png" 
+								class="dockerImg"
+								style="height: 350px; width: auto;">
+							<p class="p c-blue">
+								plataforma abierta para desarrollar, enviar y ejecutar aplicaciones
+							</p>
+					</section>
+					<section>
+							<h2>Arrancar docker</h2>
+							<pre>
+								<code class="language-html">
+		docker compose up -d
+								</code>
+							</pre>
+							<img class="dockerImg"
+								src="reveal.js/img/compose.jpeg" alt="">
+					</section>
+					<section>
+							<h2>Meternos en la terminal de docker</h2>
+							<pre>
+								<code class="language-html">
+		luego docker exec -it  cycling-friendly.api
+								</code>
+							</pre>
+							<img src="reveal.js/img/it.PNG" alt=""
+								class="dockerImg"
+								style="height: auto; width: 870px;">
 					</section>
 
-					<section>
-						<h2>Arrancar docker</h2>
-						<pre>
-							<code class="language-html">
-	docker compose up -d
-							</code>
-						</pre>
-						<img src="" alt="">
-					</section>
+				</section>
+			
 				
-					<section>
-						<h2>Meternos en la terminal de docker</h2>
-						<pre>
-							<code class="language-html">
-	luego docker exec -it  cycling-friendly.api
-							</code>
-						</pre>
-					</section>
+			<!-- Sandbox-->
+			<section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<h2>Sandbox</h2>
+					<p class="p c-red">
+						Entorno de sandbox donde se usan datos reales y lo pone a prueba el resto de la empresa, tambien se conoce como el entorno de preproduccion
+					</p>
+					<img src="reveal.js/img/amazon.jpeg" alt=""
+						class="dockerImg">
+				</section>	
+			</section>
+			
+			<!-- Producción -->		
+			<section>
+				<h2>Producción
+				</h2>
+				
+			</section>
 
+			<!-- comandos larabel -->
+				<section>
 					<section>
-						<h2>Montar la base de datos</h2>
+						<h2>Comando de mantenimiento de la estructura de la base de datso</h2>
 						<pre>
 							<code class="language-html">
 	php artisan migrate
 							</code>
 						</pre>
+						<img src="reveal.js/img/migracion.PNG" 
+							class="dockerImg"
+							style="height: 350px; width: auto;">
 					</section>
 
 					<section>
-						<h2>Montar la base de datos</h2>
+						<h2>Poblar base de datos</h2>
 						<pre>
 							<code class="language-html">
 	php artisan database:seed
 							</code>
 						</pre>
+						<img src="reveal.js/img/seed.PNG" 
+							class="dockerImg"
+							style="height: auto; width: 870px;">
 					</section>
-				</section>
-
-
-
-				
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="https://slides.com" target="_blank">https://slides.com</a>.
-					</p>
 				</section>
 			</div>
 		</div>
