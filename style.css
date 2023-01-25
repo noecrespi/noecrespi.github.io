@@ -193,17 +193,20 @@
 
 svg {
     position: absolute;
-  }
-  * {
+}
+
+* {
     box-sizing: border-box;
-  }
-  .container2 {
+}
+
+.container2 {
     position: relative;
     width: 200px;
     height: 200px;
     filter: url('#goo');
-  }
-  .container2:before {
+}
+
+.container2:before {
     content: '';
     position: absolute;
     left: 19px;
@@ -212,210 +215,379 @@ svg {
     height: 12px;
     background: #eee;
     box-shadow: #eee 50px 0 0, #eee 100px 0 0, #eee 150px 0 0, #eee 0 50px 0, #eee 50px 50px 0, #eee 100px 50px 0, #eee 150px 50px 0, #eee 0 100px 0, #eee 50px 100px 0, #eee 100px 100px 0, #eee 150px 100px 0, #eee 0 150px 0, #eee 50px 150px 0, #eee 100px 150px 0, #eee 150px 150px 0;
-  }
-  .cell {
+}
+
+.cell {
     position: absolute;
     width: 50px;
     height: 50px;
     background-color: gold;
     animation: cell1 7s cubic-bezier(0.830, 0.005, 0.280, 0.995) infinite;
-  }
-  .cell:nth-child(1) {
+}
+
+.cell:nth-child(1) {
     top: 50px;
     left: 50px;
-  }
-  .cell:nth-child(2) {
+}
+
+.cell:nth-child(2) {
     top: 50px;
     left: 100px;
     animation-name: cell2;
-  }
-  .cell:nth-child(3) {
+}
+
+.cell:nth-child(3) {
     top: 100px;
     left: 50px;
     animation-name: cell3;
-  }
-  .cell:nth-child(4) {
+}
+
+.cell:nth-child(4) {
     top: 100px;
     left: 100px;
     animation-name: cell4;
-  }
-  
-  @keyframes cell1 {
+}
+
+@keyframes cell1 {
     12% {
-      top: 50px; left: 50px; background-color: gold;
+        top: 50px;
+        left: 50px;
+        background-color: gold;
     }
+
     16% {
-      top: 50px; left: 100px; background-color: lightblue;
+        top: 50px;
+        left: 100px;
+        background-color: lightblue;
     }
+
     26% {
-      top: 50px; left: 100px; background-color: lightblue;
+        top: 50px;
+        left: 100px;
+        background-color: lightblue;
     }
+
     30% {
-      top: 50px; left: 0; background-color: lightgreen;
+        top: 50px;
+        left: 0;
+        background-color: lightgreen;
     }
+
     40% {
-      top: 50px; left: 0; background-color: lightgreen;
+        top: 50px;
+        left: 0;
+        background-color: lightgreen;
     }
+
     44% {
-      top: 100px; left: 0; background-color: coral;
+        top: 100px;
+        left: 0;
+        background-color: coral;
     }
+
     54% {
-      top: 100px; left: 0; background-color: coral;
+        top: 100px;
+        left: 0;
+        background-color: coral;
     }
+
     58% {
-      top: 100px; left: 50px; background-color: hotpink;
+        top: 100px;
+        left: 50px;
+        background-color: hotpink;
     }
+
     68% {
-      top: 100px; left: 50px; background-color: hotpink;
+        top: 100px;
+        left: 50px;
+        background-color: hotpink;
     }
+
     72% {
-      top: 100px; left: 50px; background-color: mediumorchid;
+        top: 100px;
+        left: 50px;
+        background-color: mediumorchid;
     }
+
     82% {
-      top: 100px; left: 50px; background-color: mediumorchid;
+        top: 100px;
+        left: 50px;
+        background-color: mediumorchid;
     }
+
     86% {
-      top: 50px; left: 50px; background-color: dodgerBlue;
+        top: 50px;
+        left: 50px;
+        background-color: dodgerBlue;
     }
+
     96% {
-      top: 50px; left: 50px; background-color: dodgerBlue;
+        top: 50px;
+        left: 50px;
+        background-color: dodgerBlue;
     }
+
     100% {
-      top: 50px; left: 100px; background-color: gold;
+        top: 50px;
+        left: 100px;
+        background-color: gold;
     }
-  }
-  
-  @keyframes cell2 {
+}
+
+@keyframes cell2 {
     12% {
-      top: 50px; left: 100px; background-color: gold;
+        top: 50px;
+        left: 100px;
+        background-color: gold;
     }
+
     16% {
-      top: 50px; left: 150px; background-color: lightblue;
+        top: 50px;
+        left: 150px;
+        background-color: lightblue;
     }
+
     26% {
-      top: 50px; left: 150px; background-color: lightblue;
+        top: 50px;
+        left: 150px;
+        background-color: lightblue;
     }
+
     30% {
-      top: 50px; left: 50px; background-color: lightgreen;
+        top: 50px;
+        left: 50px;
+        background-color: lightgreen;
     }
+
     40% {
-      top: 50px; left: 50px; background-color: lightgreen;
+        top: 50px;
+        left: 50px;
+        background-color: lightgreen;
     }
+
     44% {
-      top: 50px; left: 50px; background-color: coral;
+        top: 50px;
+        left: 50px;
+        background-color: coral;
     }
+
     54% {
-      top: 50px; left: 50px; background-color: coral;
+        top: 50px;
+        left: 50px;
+        background-color: coral;
     }
+
     58% {
-      top: 50px; left: 50px; background-color: hotpink;
+        top: 50px;
+        left: 50px;
+        background-color: hotpink;
     }
+
     68% {
-      top: 50px; left: 50px; background-color: hotpink;
+        top: 50px;
+        left: 50px;
+        background-color: hotpink;
     }
+
     72% {
-      top: 50px; left: 50px; background-color: mediumorchid;
+        top: 50px;
+        left: 50px;
+        background-color: mediumorchid;
     }
+
     82% {
-      top: 50px; left: 50px; background-color: mediumorchid;
+        top: 50px;
+        left: 50px;
+        background-color: mediumorchid;
     }
+
     86% {
-      top: 0; left: 50px; background-color: dodgerBlue;
+        top: 0;
+        left: 50px;
+        background-color: dodgerBlue;
     }
+
     96% {
-      top: 0; left: 50px; background-color: dodgerBlue;
+        top: 0;
+        left: 50px;
+        background-color: dodgerBlue;
     }
+
     100% {
-      top: 50px; left: 50px; background-color: gold;
+        top: 50px;
+        left: 50px;
+        background-color: gold;
     }
-  }
-  
-  @keyframes cell3 {
+}
+
+@keyframes cell3 {
     12% {
-      top: 100px; left: 50px; background-color: gold;
+        top: 100px;
+        left: 50px;
+        background-color: gold;
     }
+
     16% {
-      top: 100px; left: 50px; background-color: lightblue;
+        top: 100px;
+        left: 50px;
+        background-color: lightblue;
     }
+
     26% {
-      top: 100px; left: 50px; background-color: lightblue;
+        top: 100px;
+        left: 50px;
+        background-color: lightblue;
     }
+
     30% {
-      top: 100px; left: 50px; background-color: lightgreen;
+        top: 100px;
+        left: 50px;
+        background-color: lightgreen;
     }
+
     40% {
-      top: 100px; left: 50px; background-color: lightgreen;
+        top: 100px;
+        left: 50px;
+        background-color: lightgreen;
     }
+
     44% {
-      top: 100px; left: 50px; background-color: coral;
+        top: 100px;
+        left: 50px;
+        background-color: coral;
     }
+
     54% {
-      top: 100px; left: 50px; background-color: coral;
+        top: 100px;
+        left: 50px;
+        background-color: coral;
     }
+
     58% {
-      top: 150px; left: 50px; background-color: hotpink;
+        top: 150px;
+        left: 50px;
+        background-color: hotpink;
     }
+
     68% {
-      top: 150px; left: 50px; background-color: hotpink;
+        top: 150px;
+        left: 50px;
+        background-color: hotpink;
     }
+
     72% {
-      top: 150px; left: 0; background-color: mediumorchid;
+        top: 150px;
+        left: 0;
+        background-color: mediumorchid;
     }
+
     82% {
-      top: 150px; left: 0; background-color: mediumorchid;
+        top: 150px;
+        left: 0;
+        background-color: mediumorchid;
     }
+
     86% {
-      top: 150px; left: 50px; background-color: dodgerBlue;
+        top: 150px;
+        left: 50px;
+        background-color: dodgerBlue;
     }
+
     96% {
-      top: 150px; left: 50px; background-color: dodgerBlue;
+        top: 150px;
+        left: 50px;
+        background-color: dodgerBlue;
     }
+
     100% {
-      top: 100px; left: 50px; background-color: gold;
+        top: 100px;
+        left: 50px;
+        background-color: gold;
     }
-  }
-  
-  @keyframes cell4 {
+}
+
+@keyframes cell4 {
     12% {
-      top: 100px; left: 100px; background-color: gold;
+        top: 100px;
+        left: 100px;
+        background-color: gold;
     }
+
     16% {
-      top: 100px; left: 100px; background-color: lightblue;
+        top: 100px;
+        left: 100px;
+        background-color: lightblue;
     }
+
     26% {
-      top: 100px; left: 100px; background-color: lightblue;
+        top: 100px;
+        left: 100px;
+        background-color: lightblue;
     }
+
     30% {
-      top: 100px; left: 100px; background-color: lightgreen;
+        top: 100px;
+        left: 100px;
+        background-color: lightgreen;
     }
+
     40% {
-      top: 100px; left: 100px; background-color: lightgreen;
+        top: 100px;
+        left: 100px;
+        background-color: lightgreen;
     }
+
     44% {
-      top: 100px; left: 100px; background-color: coral;
+        top: 100px;
+        left: 100px;
+        background-color: coral;
     }
+
     54% {
-      top: 100px; left: 100px; background-color: coral;
+        top: 100px;
+        left: 100px;
+        background-color: coral;
     }
+
     58% {
-      top: 150px; left: 100px; background-color: hotpink;
+        top: 150px;
+        left: 100px;
+        background-color: hotpink;
     }
+
     68% {
-      top: 150px; left: 100px; background-color: hotpink;
+        top: 150px;
+        left: 100px;
+        background-color: hotpink;
     }
+
     72% {
-      top: 150px; left: 50px; background-color: mediumorchid;
+        top: 150px;
+        left: 50px;
+        background-color: mediumorchid;
     }
+
     82% {
-      top: 150px; left: 50px; background-color: mediumorchid;
+        top: 150px;
+        left: 50px;
+        background-color: mediumorchid;
     }
+
     86% {
-      top: 100px; left: 50px; background-color: dodgerBlue;
+        top: 100px;
+        left: 50px;
+        background-color: dodgerBlue;
     }
+
     96% {
-      top: 100px; left: 50px; background-color: dodgerBlue;
+        top: 100px;
+        left: 50px;
+        background-color: dodgerBlue;
     }
+
     100% {
-      top: 100px; left: 100px; background-color: gold;
+        top: 100px;
+        left: 100px;
+        background-color: gold;
     }
-  }
+}
