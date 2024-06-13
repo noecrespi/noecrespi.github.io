@@ -1,0 +1,537 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="reveal.js/dist/reset.css">
+    <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="reveal.js/dist/theme/black.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css">
+
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- título -->
+            <section>
+
+                <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+                    <div>
+                        <h1 class="tittle">
+                            <span class="blue_color">T</span>
+                            <span class="blue_color">E</span>
+                            <span class="yellow_color">T</span>
+                            <span class="yellow_color">R</span>
+                            <span class="red_color">I</span>
+                            <span class="red_color">S</span>
+                        </h1>
+
+                        
+
+                        <!-- <h1>Tetris</h1> -->
+
+
+                        <div class="container">
+
+                            <div class="elem elem-1"></div>
+                            <div class="elem elem-2"></div>
+                            <div class="elem elem-3"></div>
+                            <div class="elem elem-4"></div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+
+            <!-- intro -->
+            <section>
+                <section>
+                    <h1>
+                        <span class="blue_color">¿</span>
+                        <span class="yellow_color">Qué és el tetris</span>
+                        <span class="red_color">?</span>
+                    </h1>
+                </section>
+
+                <section>
+
+                    <h1 class="tittle">
+                        <span class="blue_color">O</span>
+                        <span class="blue_color">B</span>
+                        <span class="blue_color">J</span>
+                        <span class="yellow_color">E</span>
+                        <span class="yellow_color">T</span>
+                        <span class="yellow_color">I</span>
+                        <span class="red_color">V</span>
+                        <span class="red_color">O</span>
+                        <span class="red_color">S</span>
+                    </h1>
+                    <p>del proyecto</p>
+                    <ul>
+                        <li>Trabajo en equipo</li>
+                        <li>Aplicar los conocimientos adquiridos en clase en un proyecto real</li>
+                        <li>Aprender a trabajar con un repositorio remoto y local en equipo</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Requisitos funcionales -->
+            <section>
+
+                <section>
+                    <h1>
+                        <span class="blue_color">Requisitos</span>
+                        <span class="yellow_color">Funcionales</span>
+                    </h1>
+                </section>
+
+                <!-- Borrador -->
+                <section>
+                    <p>
+                        <span class="red_color">Borrador</span>
+                    </p>
+                    <img src="/images/borrador.png" class="dockerImg" style="height: 550px; width: auto;">
+
+                </section>
+                <section>
+                    <p>
+                        <span class="blue_color">Diagramas</span>
+                        <span class="yellow_color">de</span>
+                        <span class="red_color">componentes</span>
+                    </p>
+
+                    <img src="/images/Diagramas_Componentes.png" class="dockerImg" style="height: 600px; width: auto;">
+                    <!-- <pre>
+								<code class="language-html">
+		docker compose up -d
+								</code>
+							</pre> -->
+                </section>
+                <section>
+                    <p style="margin: 0;">
+                        <span class="blue_color">Interacción</span>
+                        <span class="yellow_color">del jugador</span>
+                        <span class="red_color">con el</span>
+                        <span class="green_color">juego</span>
+                    </p>
+                    <pre style="margin-top: 0;">
+						<code class="language-html" style="max-height: none; margin-top: 0;">
+1. Se mostrará por termnal el nombre del juego.
+
+2. Se mostrará por terminal el que el usuario debe introducir
+su nombre.
+
+3. Se abrirá una ventana y el jugador clicará cualquier tecla
+para empezar a jugar.
+
+4. Iniciará el juego.
+
+5. Durante todo el juego se mostrará en pantalla la pieza del 
+siguiente turno.
+
+6. Cada vez que 'caiga' una pieza comprobara si hay una línea 
+completa.
+    - Si hay una línea completa, se sumará 10 puntos a la 
+    puntuación.
+    - Si no, seguirá bajando las piezas.
+
+7. Cuando las piezas lleguen arriba(de forma vertical) el 
+juego acaba y sale en pantalla 'GAME OVER'
+						</code>
+                    </pre>
+                </section>
+
+            </section>
+
+
+            <!-- Implementación-->
+            <section>
+                <!-- <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"> -->
+                <section>
+                    <h1 style="font-size: 90px;">
+                        <span class="blue_color">I</span>
+                        <span class="blue_color">m</span>
+                        <span class="blue_color">p</span>
+                        <span class="yellow_color">l</span>
+                        <span class="yellow_color">e</span>
+                        <span class="yellow_color">m</span>
+                        <span class="red_color">e</span>
+                        <span class="red_color">n</span>
+                        <span class="red_color">t</span>
+                        <span class="red_color">a</span>
+                        <span class="green_color">c</span>
+                        <span class="green_color">i</span>
+                        <span class="green_color">ó</span>
+                        <span class="green_color">n</span>
+                    </h1>
+                </section>
+
+                <section>
+                    <H2 style="margin: 0;">
+                        <span class="red_color">Tecnologías</span>
+                        <span class="green_color">utilizadas</span>
+                    </H2>
+                    <div style="display: flex; justify-content: space-around;">
+                        <div style="display: flex; align-items: center;">
+                            <ul>
+                                <li class="yellow_color">Python</li>
+                                <li class="blue_color">GitHub</li>
+                                <li class="green_color">MongoDB</li>
+                            </ul>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="/images/Python.png" class="dockerImg" style="height: 150px; width: auto;">
+                            <img src="/images/Fondo.png" class="dockerImg" style="height: 165px; width: auto;">
+                            <img src="/images/MongoDB.png" class="dockerImg" style="height: 100px; width: auto;">
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <H2 style="margin: 0;">
+                        <span class="green_color">Herramientas</span>
+                        <span class="blue_color">utilizadas</span>
+                    </H2>
+                    <div style="display: flex; justify-content: space-around;">
+                        <div style="display: flex; align-items: center;">
+                            <ul>
+                                <li class="blue_color">VsCode</li>
+                                <li class="yellow_color">Git</li>
+                                <li class="green_color">Pygame</li>
+                                <li class="red_color">Random</li>
+                            </ul>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="/images/vscode.png" class="dockerImg" style="height: 150px; width: auto;">
+                            <img src="/images/git.png" class="dockerImg" style="height: 150px; width: auto;">
+                            <img src="/images/pygame_.png" class="dockerImg" style="height: 100px; width: auto;">
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+
+
+            <!-- Codificación y creación de funciones. -->
+            <section>
+                <section>
+                    <h1>
+                        <span class="blue_color">Codificación</span>
+                        <span class="yellow_color">y creación</span>
+                        <span class="red_color">de</span>
+                        <span class="green_color">funciones</span>
+                    </h1>
+                </section>
+
+                <section>
+                    <h2>
+                        <span class="blue_color">1.</span>
+                        <span class="yellow_color">board
+                        </span>
+                    </h2>
+                    <p>archivo que contiene las variables globales</p>
+                    <pre>
+							<code class="language-html">
+    - Variables:
+        · Dimendisones del tablero.
+        · Posicion del tablero(x, y).
+        ·Formas de las piezas (S, Z, I, O, J, L, T).
+    - Listas:
+        · Todas las piezas.
+        · Colores de las piezas.
+    
+							</code>
+						</pre>
+                </section>
+
+                <section>
+                    <h2>
+                        <span class="green_color">2.</span>
+                        <span class="red_color">game
+                        </span>
+                    </h2>
+                    <p>archivo que contiene las funciones del juego.</p>
+                    <pre>
+							<code class="language-html">
+- Librerias utilizadas:
+    · pygame: libreria para crear el juego.
+    · random: libreria para elegir una pieza aleatoria.
+- Archivos importados:
+    · board: archivo que contiene las varglobales.
+- Clase:
+    · Piece: clase que crea las piezas.
+- Funciones:
+    · create_grid: crea el tablero.
+    · convert_shape_format: convierte la formapieza en una lista decoordenadas.
+    · valid_space: comprueba si la pieza secolocar en el tablero.
+    · check_lost: comprueba si se ha perdpartida, es decir si se ha llenadode piezas el tablerp de forma vertical.
+    · get_shape: elige una pieza aleatoria usalibreria random.
+    · draw_text_middle: dibuja el texto en el de la pantalla.
+    · draw_grid: dibuja la cuadricula del tablla pantalla.
+    · clear_rows: elimina las filas compencontramos algun uso de lambda.
+    · draw_next_shape: dibuja la siguiente pila pantalla.
+    · update_score: actualiza la puntuaciónfichero records.txt, siempre quesea mayla puntuación anterior.
+    · max_score: lee el fichero recordsdevuelve la puntuación máxima.
+    · draw_window: dibuja la ventana del(puntuación, fondo, tamaño,color...), la libreria pygame.
+							</code>
+						</pre>
+                </section>
+
+                <section>
+                    <h2>
+                        <span class="green_color">3.</span>
+                        <span class="blue_color">tetris
+                        </span>
+                    </h2>
+                    <p>archivo que contiene el bucle principal del juego</p>
+                    <pre>
+							<code class="language-html">
+- Librerias utilizadas:
+pygame: libreria para crear el juego.
+pymongo: libreria para conectar con la datos mongoDB.
+- Modulos importados de pygame:
+pygame.locals: para usar en el jugo lasdel teclado.
+mixer: para reproducir sonidos durante el juego.
+- Archivos importados:
+board: archivo que contiene las vaglobales.
+game: archivo que contiene las funciojuego.
+- Funciones:
+    · main: bucle principal del juego.
+        · Guarda las posiciones de las piezas caun diccionario.
+        · Reloj para controlar los fps (fotograsegundo).
+        · Cargar el archivo de música y lo reprobucle.
+        · Conectar con la BBDD, el cual se entcueprueba y error (try y except).
+        · Mientras el programa se esté ejecutando:
+            · Contrlar el tiempo de caida de las piezacaigan en el tiempo adecuado.
+            · Aumentar la velocidad de caida de lassegún el tiempo.
+            · Controlar el cierre del juego.
+                · Controlar las teclas del teclado para rotar las piezas.
+        · Asignar la posicion de la pieza en la lista.
+        · Recorrer la pieza y asignar un color a cde las piezas.
+        · Recorrer la posición de la pieza y secada una de ellas al diccionario.
+            · Aumentar la puntuación por cada fila eliminada.
+        · Insertar el nombre y la puntuación en de datos.
+            · Actualizar la puntuación máxima si lpuntuación es mayor.
+    · main_menu: menu principal del juego.
+        · Inicializar el juego.
+- Otros:
+    · Pide al usuario un nombre para guardar en la base de datos el nombre y la puntuación.
+							</code>
+						</pre>
+                </section>
+            </section>
+
+            <!-- Codigo -->
+            <section>
+                <section>
+                    <h1>
+                        <span class="blue_color">Funcionamiento</span>
+                        <span class="yellow_color">del</span>
+                        <span class="red_color">juego</span>
+                    </h1>
+
+                    <h2>código</h2>
+                </section>
+                <section>
+                    <h2>
+                        <span class="green_color">¿</span>
+                        <span class="yellow_color">Cómo se genera las piezas</span>
+                        <span class="blue_color">?</span>
+                    </h2>
+                    <p>
+                        Las piezas están definidas en el archivo board.py. Cada pieza esá definida en una lista y en esa
+                        lista tiene varias sublistas. Eso es porque cada pieza tiene varias formas:
+                    </p>
+                    <ul>
+                        <li>Pieza normal, clasica</li>
+                        <li>Pieza rotada</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <img src="/images/constantes.png" class="dockerImg" style="height: auto; width: 870px;">
+                </section>
+
+                <section>
+                    <p>Todas las piezas están metidas en una lista</p>
+                    <pre>
+                        <code class="language-html">
+    shapes = [S, Z, I, O, J, L, T]                       
+                        </code>
+                    </pre>
+
+                    <p>Y los colores de cada una de ellas está en otra lista </p>
+                    <pre>
+                        <code class="language-html">
+shape_colors = [(0, 255, 0), (255, 0, 0), (0, 255, 255), (255, 255, 0), (255, 165, 0), (0, 0, 255), (128, 0, 128)]
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <p>
+                        El archivo game pide las piezas del archivo <b class="red_color">board</b>:
+                    </p>
+
+                    <ul>
+                        <li>Clase <b class="yellow_color">Piece</b> crea las piezas</li>
+                        <li>Función <b class="yellow_color">convert_shape_format</b>: coge una pieza como argumento y
+                            devuelve una lista de coordenadas de las celtas que no son ceros.</li>
+                        <li>Función <b class="yellow_color">draw_next_shape</b> draw_next_shape: dibuja la pieza en el
+                            tablero.</li>
+                    </ul>
+                    <p>
+                        El archivo <b class="red_color">tetris</b> usa los archivos del <b class="red_color">board</b> y
+                        del <b class="red_color">game</b>. El cual regorre la pieza y le asigna el color de la pieza.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>
+                        <span class="yellow_color">¿</span>
+                        <span class="red_color">Cómo sabe que es la máxima puntución</span>
+                        <span class="green_color">?</span>
+                    </h2>
+                </section>
+
+                <section>
+                    <p>Hay un archivo que se llama <b class="red_color">records.txt</b> que se encarga de guardar la
+                        máxima puntuación en un archivo txt.
+                    </p>
+
+                    <pre>
+                        <code class="language-html">
+if check_lost(locked_positions):
+# Insertar datos en la base de datos
+    puntuaciones.insert_one({ "nombre": n"puntuacion": score})
+    draw_text_middle(win, 'GAME OVER', 80, (2255))
+    pygame.display.update()
+    pygame.time.delay(1500)
+    run = False
+    update_score(score)
+    
+    # se actualiza el ultimo puntaje si es mas alto
+    if score > last_score:
+        last_score = score
+    while True:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.display.quit()
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h2>
+                        <span class="red_color">¿</span>
+                        <span class="green_color">Cómo sabe si se hace linea</span>
+                        <span class="blue_color">?</span>
+                    </h2>
+                </section>
+
+                <section>
+                    <div style="display: flex; align-items: center; justify-content: space-around;">
+                        <img src="/images/eliminar_filas.png" class="dockerImg" style="height: auto; width: 870px;">
+
+                        <div class="container2" style=" margin-left:2rem">
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                        </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                                    <feColorMatrix in="blur" mode="matrix"
+                                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 15 -7" />
+                                </filter>
+                            </defs>
+                        </svg>
+
+                    </div>
+
+                </section>
+
+
+
+
+            </section>
+
+            <!-- BBDD -->
+            <section>
+                <section>
+                    <h1>
+                        <span class="blue_color">B</span>
+                        <span class="yellow_color">B</span>
+                        <span class="red_color">D</span>
+                        <span class="green_color">D</span>
+                    </h1>
+                </section>
+                <section>
+                    <pre>
+                        <code class="language-html">
+    {
+        $jsonSchema: {
+            bsonType: 'object',
+            required: [
+                'nombre',
+                'puntuacion',
+            ],
+            properties: {
+                nombre: {
+                    bsonType: 'string',
+                    description: 'nombre del jugador'
+                },
+                puntuacion: {
+                    bsonType: 'int',
+                    description: 'puntuacijugador'
+                },
+            }
+        }
+    }                        
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <img src="/images/DDBB.jpeg" class="dockerImg" style="height: auto; width: 870px;">
+                </section>
+
+
+            </section>
+            <section>
+                <a href="https://github.com/Jouad01/ProyectoPython-Tetris">
+                    <img src="/images/Fondo.png" class="dockerImg" style="height: auto; width: 400px;">
+                </a>
+                
+            </section>
+        </div>
+    </div>
+
+    <script src="reveal.js/dist/reveal.js"></script>
+    <script src="reveal.js/plugin/notes/notes.js"></script>
+    <script src="reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="reveal.js/plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
+</html>

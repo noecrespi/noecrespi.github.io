@@ -1,252 +1,31 @@
-/* Animación de la posrata del tetris */
-
-.container {
-    width: 105px;
-    height: 100px;
-    position: absolute;
-    top: 12rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: auto;
-    text-align: center;
-    animation: rotate-move 8s cubic-bezier(.5, 0, .5, 1) infinite;
+/*----------------------------------------------*/
+/*                Configuration                 */
+/*----------------------------------------------*/
+.color-blue{
+color: #679abb;
 }
 
-.elem {
-    width: 45px;
-    height: 45px;
-    display: inline-block;
-    margin: 1px;
-    border-radius: 5px;
+.color-red {
+    color: #c11321;
 }
 
-.elem-1 {
-    /* background-color: #fc6a21; */
-    background-color: red;
-    animation: elem-1-move 8s linear infinite;
+.color-wine {
+    color: #790000;
 }
 
-.elem-2 {
-    /* background-color: #f84d30; */
-    background-color: blue;
-    animation: elem-2-move 8s linear infinite;
+.color-crema{
+    color: #fdf0d5;
 }
 
-.elem-3 {
-    /* background-color: #f02b57; */
-    background-color: yellow;
-    animation: elem-3-move 8s linear infinite;
+span .color-red {
+    font-size: 15rem;
 }
 
-.elem-4 {
-    /* background-color: #ec1879; */
-    background-color: green;
-    animation: elem-4-move 8s linear infinite;
-}
-
-@keyframes elem-1-move {
-
-    5%,
-    95% {
-        transform: translate(0, 0)
-    }
-
-    11.6%,
-    21.6%,
-    78.2%,
-    88.2% {
-        transform: translate(-27px, 0px)
-    }
-
-    28.3%,
-    38.3%,
-    61.6%,
-    71.6% {
-        transform: translate(-27px, 51px)
-    }
-
-    44.9%,
-    59.9% {
-        transform: translate(-27px, 51px)
-    }
-}
-
-@keyframes elem-2-move {
-
-    5%,
-    95% {
-        transform: translate(0, 0)
-    }
-
-    11.6%,
-    21.6%,
-    78.2%,
-    88.2% {
-        transform: translate(-27px, 0px)
-    }
-
-    28.3%,
-    38.3%,
-    61.6%,
-    71.6% {
-        transform: translate(-27px, 0px)
-    }
-
-    44.9%,
-    59.9% {
-        transform: translate(25px, 0px)
-    }
-}
-
-@keyframes elem-3-move {
-
-    5%,
-    95% {
-        transform: translate(0, 0)
-    }
-
-    11.6%,
-    21.6%,
-    78.2%,
-    88.2% {
-        transform: translate(25px, 0px)
-    }
-
-    28.3%,
-    38.3%,
-    61.6%,
-    71.6% {
-        transform: translate(25px, 0px)
-    }
-
-    44.9%,
-    59.9% {
-        transform: translate(25px, 0px)
-    }
-}
-
-@keyframes elem-4-move {
-
-    5%,
-    95% {
-        transform: translate(0, 0)
-    }
-
-    11.6%,
-    21.6%,
-    78.2%,
-    88.2% {
-        transform: translate(25px, 0px)
-    }
-
-    28.3%,
-    38.3%,
-    61.6%,
-    71.6% {
-        transform: translate(25px, 0px)
-    }
-
-    44.9%,
-    59.9% {
-        transform: translate(25px, 0px)
-    }
-}
-
-@keyframes rotate-move {
-
-    15.6%,
-    17.6%,
-    48.9%,
-    50.9%,
-    82.2%,
-    84.2% {
-        transform: translate(-50%, -50%) rotate(360deg)
-    }
-
-    0%,
-    32.3%,
-    34.3%,
-    65.6%,
-    67.6%,
-    99% {
-        transform: translate(-50%, -50%) rotate(0)
-    }
-}
-
-.blue_color {
-    color: blue;
-}
-
-.yellow_color {
-    color: yellow;
-}
-
-.green_color {
-    color: green;
-}
-
-.red_color {
-    color: red;
-}
+body {
+    background-color: #002335 !important;
+  }
 
 
-
-svg {
-    position: absolute;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.container2 {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    filter: url('#goo');
-}
-
-.container2:before {
-    content: '';
-    position: absolute;
-    left: 19px;
-    top: 19px;
-    width: 12px;
-    height: 12px;
-    background: #eee;
-    box-shadow: #eee 50px 0 0, #eee 100px 0 0, #eee 150px 0 0, #eee 0 50px 0, #eee 50px 50px 0, #eee 100px 50px 0, #eee 150px 50px 0, #eee 0 100px 0, #eee 50px 100px 0, #eee 100px 100px 0, #eee 150px 100px 0, #eee 0 150px 0, #eee 50px 150px 0, #eee 100px 150px 0, #eee 150px 150px 0;
-}
-
-.cell {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: gold;
-    animation: cell1 7s cubic-bezier(0.830, 0.005, 0.280, 0.995) infinite;
-}
-
-.cell:nth-child(1) {
-    top: 50px;
-    left: 50px;
-}
-
-.cell:nth-child(2) {
-    top: 50px;
-    left: 100px;
-    animation-name: cell2;
-}
-
-.cell:nth-child(3) {
-    top: 100px;
-    left: 50px;
-    animation-name: cell3;
-}
-
-.cell:nth-child(4) {
-    top: 100px;
-    left: 100px;
-    animation-name: cell4;
-}
 
 @keyframes cell1 {
     12% {
